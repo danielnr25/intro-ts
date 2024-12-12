@@ -13,11 +13,10 @@ class Persona{
     }
 }
 
-
 const personas:Persona[] = [
     new Persona('Daniel',50),
     new Persona('Giancarlos',20),
-    new Persona('Maria',30)
+    new Persona('Maria',30,)
 ]
 
 for(let i=0;i<personas.length;i++){
