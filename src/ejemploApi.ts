@@ -48,9 +48,10 @@ const apiList = document.getElementById("apiList") as HTMLUListElement
 fetch("https://jsonplaceholder.typicode.com/users")
 .then( async (response) =>{
     const users = await response.json();
-    users.forEach((user:User)=>{
+    users.forEach((usuario:User)=>{
+        console.log(usuario)
         const li = document.createElement('li');
-        li.textContent = `${user.name} - ${user.email} - ${user.address.city}- ${user.company.name}`;
+        li.textContent = `${usuario.name} - ${usuario.email} - ${usuario.address.city}- ${usuario.company.name}`;
         apiList.appendChild(li);
     })
 } )
